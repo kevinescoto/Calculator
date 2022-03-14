@@ -1,6 +1,6 @@
 def welcome():
     print()
-    print("Welcome To Your Calculator V1.3")
+    print("Welcome To Number Cruncher V1.3")
 
 def calculate():
     operation = input('''
