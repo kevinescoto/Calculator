@@ -9,6 +9,7 @@ Please type in the math operation you would like to complete:
 - for subtraction
 * for multiplication
 / for division
+** for power
 ''')
 
     num1 = int(input('Pick Your First Number: '))
@@ -31,7 +32,10 @@ Please type in the math operation you would like to complete:
 #Division
         print('{} / {} = '.format(num1, num2))
         print(num1 / num2)
-
+    elif operation == '**':
+        print('{} ** {} = '.format(num1, num2))
+        print(num1 ** num2)
+        
     else:
         print("No a Available Option, Try Again.")
 
