@@ -1,3 +1,5 @@
+import math
+
 def welcome():
     print()
     print("Welcome To Number Cruncher V1.3")
@@ -10,6 +12,7 @@ Please type in the math operation you would like to complete:
 * for multiplication
 / for division
 ** for power
+root for Square Root
 ''')
 
     num1 = int(input('Pick Your First Number: '))
@@ -17,24 +20,29 @@ Please type in the math operation you would like to complete:
 
 
     if operation == '+':
-#Addition
+        #Addition
         print('{} + {} = '.format(num1, num2))
         print(num1 + num2)
     elif operation == '-':
-#Subraction
+        #Subraction
         print('{} - {} = '.format(num1, num2))
         print(num1 - num2)
     elif operation == '*':
-#Multiply
+        #Multiply
         print('{} * {} = '.format(num1, num2))
         print(num1 * num2)
     elif operation == '/':
-#Division
+        #Division
         print('{} / {} = '.format(num1, num2))
         print(num1 / num2)
+        #Power
     elif operation == '**':
         print('{} ** {} = '.format(num1, num2))
         print(num1 ** num2)
+
+    elif operation == 'root':
+        print('Square Root of {} = '.format(num1))
+        print(math.sqrt(num1))
         
     else:
         print("No a Available Option, Try Again.")
