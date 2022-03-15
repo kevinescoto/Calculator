@@ -12,5 +12,5 @@ Upcoming Additions:
 
 - Able to Power a Number / Completed
 - Get the Square Root of a Number / Completed
-_ Start Building the Skeleton for the GUI so the program can function like an online calculator.
+- Start Building the Skeleton for the GUI so the program can function like an online calculator.
 
