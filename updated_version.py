@@ -35,9 +35,9 @@ Please type in the math operation you would like to complete:
     elif operation == '**':
         print('{} ** {} = '.format(num1, num2))
         print(num1 ** num2)
-        
+
     else:
-        print("No a Available Option, Try Again.")
+        print("Not a Available Option, Try Again.")
 
     again()
 
