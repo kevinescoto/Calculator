@@ -3,6 +3,7 @@ import math
 def welcome():
     print()
     print("Welcome To Number Cruncher V1.3")
+    print("Current Version is Incomplete, Future Additions Coming")
 
 def calculate():
     operation = input('''
@@ -45,7 +46,7 @@ root for Square Root
         print(math.sqrt(num1))
         
     else:
-        print("No a Available Option, Try Again.")
+        print("Not a Available Option, Try Again.")
 
     again()
 
