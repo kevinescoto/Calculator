@@ -1,66 +1,67 @@
 import math
 
+def welcome():
+    print()
+    print("Welcome To Number Cruncher V1.3")
 
-def add(x, y):
-    return x + y
+def calculate():
+    operation = input('''
+Please type in the math operation you would like to complete:
++ for addition
+- for subtraction
+* for multiplication
+/ for division
+** for power
+root for Square Root
+''')
 
-def subtract(x, y):
-    return x - y
-
-def multiply(x, y):
-    return x * y
-
-def divide(x, y):
-    return x / y
-
-def power(x, y):
-    return x ** y
-
-def square(x):
-    return math.sqrt(x)
-
-print("Select Operation.")
-print("1.Add")
-print("2.Subtract")
-print("3.Multiply")
-print("4.Divide")
-print("5.Power")
-print("6.Square Root")
+    num1 = int(input('Pick Your First Number: '))
+    num2 = int(input('Pick Your Second Number: '))
 
 
-while True:
-    # take input from the user
-    choice = input("Enter choice(1/2/3/4/5/6): ")
+    if operation == '+':
+        #Addition
+        print('{} + {} = '.format(num1, num2))
+        print(num1 + num2)
+    elif operation == '-':
+        #Subraction
+        print('{} - {} = '.format(num1, num2))
+        print(num1 - num2)
+    elif operation == '*':
+        #Multiply
+        print('{} * {} = '.format(num1, num2))
+        print(num1 * num2)
+    elif operation == '/':
+        #Division
+        print('{} / {} = '.format(num1, num2))
+        print(num1 / num2)
+        #Power
+    elif operation == '**':
+        print('{} ** {} = '.format(num1, num2))
+        print(num1 ** num2)
 
-    # check if choice is one of the four options
-    if choice in (1, 2, 3, 4, 5, 6):
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
-
-        if choice == 1:
-            print(num1, "+", num2, "=", add(num1, num2))
-
-        elif choice == 2:
-            print(num1, "-", num2, "=", subtract(num1, num2))
-
-        elif choice == 3:
-            print(num1, "*", num2, "=", multiply(num1, num2))
-
-        elif choice == 4:
-            print(num1, "/", num2, "=", divide(num1, num2))
-
-        elif choice == 5:
-            print(num1, "^", num2, "=", power(num1, num2))
+    elif operation == 'root':
+        print('Square Root of {} = '.format(num1))
+        print(math.sqrt(num1))
         
-        #elif choice == 6:
-            #print("Square Root of ", num1, " is ", square(num1))
-             
-        # check if user wants another calculation
-        # break the while loop if answer is no
-        move_forward = input("Continue? (1 for Yes / 0 for No): ")
-        if move_forward == 0:
-            break
-    
     else:
-        print("Invalid Input")
-        break
+        print("No a Available Option, Try Again.")
+
+    again()
+
+
+def again():
+    use_again = input('''
+Do You Want to Use the Calculator Again?
+Please type Y for Yes or N for No.
+''')
+    if use_again.upper() == 'Y':
+        calculate()
+    elif use_again.upper() == 'N':
+        print("See You Later")
+    else:
+        again()
+    
+    
+welcome()
+calculate()

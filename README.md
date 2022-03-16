@@ -10,6 +10,7 @@ Visual Studio Code is the Editor used to work on the Project.
 
 Upcoming Additions:
 
-- Able to Power a Number
-- Get the Square Root of a Number
+- Able to Power a Number / Completed
+- Get the Square Root of a Number / Completed
+- Start Building the Skeleton for the GUI so the program can function like an online calculator.
 
