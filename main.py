@@ -1,5 +1,19 @@
 import math
 
+def logo():
+
+    logo = """
+     ___    ___   
+    |   |   |  |    
+    |   |___|  |    
+    |          |      
+    |   ____   |    
+    |___|   |__|    
+    
+    """
+
+
+
 def welcome():
     print()
     print("Welcome To Number Cruncher V1.3")

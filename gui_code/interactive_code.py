@@ -22,7 +22,8 @@ name_label = tk.Label(text="Your Name:")
 entry = tk.Entry(fg ="white", bg="black", width=50 )
 name_label.pack()
 name = entry.get()
-name
+
+
 entry.pack()
 
 
