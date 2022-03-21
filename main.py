@@ -3,15 +3,15 @@ import math
 def logo():
 
     logo = """
-     ___    ___   
-    |   |   |  |    
-    |   |___|  |    
-    |          |      
-    |   ____   |    
-    |___|   |__|    
+     ___     ___   _____ 
+    |   |   |   | |_____|
+    |   |___|   | |     |
+    |           | |     |
+    |   ____    | |     |
+    |___|   |___| |_____|
     
     """
-
+    print(logo)
 
 
 def welcome():
@@ -77,6 +77,6 @@ Please type Y for Yes or N for No.
     else:
         again()
     
-    
+logo()    
 welcome()
 calculate()
