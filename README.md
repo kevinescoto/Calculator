@@ -14,3 +14,8 @@ Upcoming Additions:
 - Get the Square Root of a Number / Completed
 - Start Building the Skeleton for the GUI so the program can function like an online calculator.
 
+Issues:
+
+- Still Learning More About Python
+- Use More Complex Python Features to Further Improve Project
+
