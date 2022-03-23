@@ -19,7 +19,13 @@ def welcome():
     print("Welcome To Number Cruncher V1.3")
     print("Current Version is Incomplete, Future Additions Coming")
 
+def try_again():
+    print()
+    print("That Was not a valid option. Please Try Again.")
+
+
 def calculate():
+    print()
     operation = input('''
 Please type in the math operation you would like to complete:
 + for addition
@@ -30,10 +36,10 @@ Please type in the math operation you would like to complete:
 root for Square Root
 fact for factorial calculation
 ''')
-
+    print()
     num1 = int(input('Pick Your First Number: '))
     num2 = int(input('Pick Your Second Number: '))
-
+    print()
 
     if operation == '+':
         #Addition
@@ -65,7 +71,7 @@ fact for factorial calculation
         print(math.factorial(num1))
         
     else:
-        print("Not a Available Option, Try Again.")
+        try_again()
 
     again()
 
