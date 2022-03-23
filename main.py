@@ -28,6 +28,7 @@ Please type in the math operation you would like to complete:
 / for division
 ** for power
 root for Square Root
+fact for factorial calculation
 ''')
 
     num1 = int(input('Pick Your First Number: '))
@@ -58,6 +59,10 @@ root for Square Root
     elif operation == 'root':
         print('Square Root of {} = '.format(num1))
         print(math.sqrt(num1))
+
+    elif operation == 'fact':
+        print('The Factorial of {} = '.format(num1))
+        print(math.factorial(num1))
         
     else:
         print("Not a Available Option, Try Again.")
