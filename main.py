@@ -1,18 +1,7 @@
 import math
 
-def logo():
-
-    logo = """
-     ___     ___   _____ 
-    |   |   |   | |_____|
-    |   |___|   | |     |
-    |           | |     |
-    |   ____    | |     |
-    |___|   |___| |_____|
-    
-    """
-    print(logo)
-
+def authorsnotes():
+    print("Current Version is under development, Work Continuation TBD.")
 
 def welcome():
     print()
