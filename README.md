@@ -1,6 +1,6 @@
 # Calculator
 
-This is a testing a demo for Calculator. 
+This is a testing demo for a Calculator. 
 Right Now The Calculator is in Beta.
 Current Version: Version 1.3
 
